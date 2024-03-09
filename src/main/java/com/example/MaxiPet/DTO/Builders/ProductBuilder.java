@@ -1,12 +1,32 @@
 package com.example.MaxiPet.DTO.Builders;
 
 import com.example.MaxiPet.DTO.ProductDTO;
+import com.example.MaxiPet.DTO.UserDTO;
 import com.example.MaxiPet.Entity.Product;
+import com.example.MaxiPet.Entity.Review;
+import com.example.MaxiPet.Entity.User;
 
 public class ProductBuilder {
 
     public static ProductDTO toProductDTO(Product product){
         return ProductDTO.builder()
+                .id(product.getId())
+                .name(product.getName())
+                .price(product.getPrice())
+                .stock(product.getStock())
+                .category(product.getCategory())
+                .shoppingCartProductList(ShoppingCartProductBuilder.toShoppingCartProductDTOList(product.getShoppingCartProductList()))
+                .orderProductList(OrderProductBuilder.toOrderProductDTOList(product.getOrderProductList()))
+                .reviewList(ReviewBuilder.toReviewDTOList(product.getReviewList()))
+                .build();
+    }
+    public static Product toEntity(ProductDTO productDTO) {
+        return Product.builder()
+                .id(productDTO.getId())
+                .name(productDTO.getName())
+                .price(productDTO.getPrice())
+                .stock(productDTO.getStock())
+                .category(productDTO.getCategory())
                 .build();
     }
 }

@@ -10,6 +10,12 @@ public class OrderBuilder {
 
     public static OrderDTO toOrderDTO(Order order) {
         return OrderDTO.builder()
+                .id(order.getId())
+                .status(order.getStatus())
+                .orderDate(order.getOrderDate())
+                .totalPrice(order.getTotalPrice())
+                .orderProductList(OrderProductBuilder.toOrderProductDTOList(order.getOrderProductList()))
+                .user(order.getUser())
                 .build();
     }
 

@@ -12,6 +12,11 @@ public class ReviewBuilder {
 
     public static ReviewDTO toReviewDTO(Review review) {
         return ReviewDTO.builder()
+                .id(review.getId())
+                .text(review.getText())
+                .rating(review.getRating())
+                .product(ProductBuilder.toProductDTO(review.getProduct()))
+                .user(UserBuilder.toUserDTO(review.getUser()))
                 .build();
     }
 

@@ -1,11 +1,6 @@
 package com.example.MaxiPet.DTO;
 
-import com.example.MaxiPet.Entity.Order;
-import com.example.MaxiPet.Entity.Review;
-import com.example.MaxiPet.Entity.ShoppingCartProduct;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
 import lombok.Builder;
 import lombok.Data;
 
