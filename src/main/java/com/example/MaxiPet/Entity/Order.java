@@ -29,7 +29,7 @@ public class Order {
     @Column
     private Float totalPrice;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
     private List<OrderProduct> orderProductList;
 
     @ManyToOne

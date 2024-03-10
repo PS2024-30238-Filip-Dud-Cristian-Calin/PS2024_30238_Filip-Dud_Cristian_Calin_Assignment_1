@@ -27,10 +27,10 @@ public class Product {
     private Integer stock;
     @Column
     private String category;
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
     private List<ShoppingCartProduct> shoppingCartProductList;
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
     private List<OrderProduct> orderProductList;
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
     private List<Review> reviewList;
 }
