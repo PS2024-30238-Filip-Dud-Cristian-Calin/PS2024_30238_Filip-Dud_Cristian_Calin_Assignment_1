@@ -10,8 +10,8 @@ public class OrderProductBuilder {
     public static OrderProductDTO toOrderProductDTO(OrderProduct orderProduct)
     {
         return OrderProductDTO.builder()
-                .order(orderProduct.getOrder())
-                .product(orderProduct.getProduct())
+                .orderId(orderProduct.getOrder().getId())
+                .productId(orderProduct.getProduct().getId())
                 .quantity(orderProduct.getQuantity())
                 .build();
 

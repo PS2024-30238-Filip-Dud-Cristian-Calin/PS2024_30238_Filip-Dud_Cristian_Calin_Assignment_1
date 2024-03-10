@@ -18,6 +18,6 @@ public class OrderDTO {
     private String status;
     private Date orderDate;
     private Float totalPrice;
-    private List<OrderProductDTO> orderProductList;
-    private User user;
+    private List<OrderProductDTO> orderProductDTOList;
+    private Integer userId;
 }

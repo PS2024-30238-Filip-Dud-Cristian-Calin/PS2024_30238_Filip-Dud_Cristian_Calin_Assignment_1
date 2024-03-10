@@ -15,8 +15,8 @@ public class ReviewBuilder {
                 .id(review.getId())
                 .text(review.getText())
                 .rating(review.getRating())
-                .product(ProductBuilder.toProductDTO(review.getProduct()))
-                .user(UserBuilder.toUserDTO(review.getUser()))
+                .productId(review.getProduct().getId())
+                .userId(review.getUser().getId())
                 .build();
     }
 

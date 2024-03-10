@@ -9,7 +9,7 @@ import lombok.Data;
 @Builder
 public class OrderProductDTO {
 
-    private Order order;
-    private Product product;
+    private Integer orderId;
+    private Integer productId;
     private Integer quantity;
 }

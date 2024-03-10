@@ -16,8 +16,8 @@ public class ShoppingCartProductBuilder {
         return ShoppingCartProductDTO.builder()
                 .id(shoppingCartProduct.getId())
                 .quantity(shoppingCartProduct.getQuantity())
-                .product(ProductBuilder.toProductDTO(shoppingCartProduct.getProduct()))
-                .user(UserBuilder.toUserDTO(shoppingCartProduct.getUser()))
+                .productId(shoppingCartProduct.getProduct().getId())
+                .userId(shoppingCartProduct.getUser().getId())
                 .build();
     }
 

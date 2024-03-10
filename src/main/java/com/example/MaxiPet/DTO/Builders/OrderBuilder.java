@@ -14,8 +14,8 @@ public class OrderBuilder {
                 .status(order.getStatus())
                 .orderDate(order.getOrderDate())
                 .totalPrice(order.getTotalPrice())
-                .orderProductList(OrderProductBuilder.toOrderProductDTOList(order.getOrderProductList()))
-                .user(order.getUser())
+                .orderProductDTOList(OrderProductBuilder.toOrderProductDTOList(order.getOrderProductList()))
+                .userId(order.getUser().getId())
                 .build();
     }
 

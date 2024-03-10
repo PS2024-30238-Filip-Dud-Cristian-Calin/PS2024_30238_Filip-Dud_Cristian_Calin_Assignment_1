@@ -27,10 +27,13 @@ public class Product {
     private Integer stock;
     @Column
     private String category;
+
     @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
     private List<ShoppingCartProduct> shoppingCartProductList;
+
     @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
     private List<OrderProduct> orderProductList;
-    @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Review> reviewList;
 }
