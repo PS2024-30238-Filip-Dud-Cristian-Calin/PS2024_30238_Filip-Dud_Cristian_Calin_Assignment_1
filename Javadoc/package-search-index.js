@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.example.MaxiPet"},{"l":"com.example.MaxiPet.Controller"},{"l":"com.example.MaxiPet.DTO"},{"l":"com.example.MaxiPet.DTO.Builders"},{"l":"com.example.MaxiPet.Entity"},{"l":"com.example.MaxiPet.Repository"},{"l":"com.example.MaxiPet.Service"}];updateSearchResults();

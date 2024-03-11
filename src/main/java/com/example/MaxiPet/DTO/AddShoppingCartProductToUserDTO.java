@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @Builder
 public class AddShoppingCartProductToUserDTO {
-    private Integer user_id;
-    private Integer product_id;
+    private Integer userId;
+    private Integer productId;
     private Integer quantity;
 }

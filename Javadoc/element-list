@@ -1,0 +1,7 @@
+com.example.MaxiPet
+com.example.MaxiPet.Controller
+com.example.MaxiPet.DTO
+com.example.MaxiPet.DTO.Builders
+com.example.MaxiPet.Entity
+com.example.MaxiPet.Repository
+com.example.MaxiPet.Service

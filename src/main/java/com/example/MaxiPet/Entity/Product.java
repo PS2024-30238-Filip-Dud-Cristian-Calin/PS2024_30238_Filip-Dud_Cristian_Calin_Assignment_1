@@ -28,12 +28,12 @@ public class Product {
     @Column
     private String category;
 
-    @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "product", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     private List<ShoppingCartProduct> shoppingCartProductList;
 
     @OneToMany(mappedBy = "product", fetch = FetchType.EAGER)
     private List<OrderProduct> orderProductList;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "product", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     private List<Review> reviewList;
 }

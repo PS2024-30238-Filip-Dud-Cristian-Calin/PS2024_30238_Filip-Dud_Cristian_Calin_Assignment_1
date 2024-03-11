@@ -1,10 +1,7 @@
 package com.example.MaxiPet.DTO.Builders;
 
 import com.example.MaxiPet.DTO.ProductDTO;
-import com.example.MaxiPet.DTO.UserDTO;
 import com.example.MaxiPet.Entity.Product;
-import com.example.MaxiPet.Entity.Review;
-import com.example.MaxiPet.Entity.User;
 
 public class ProductBuilder {
 
@@ -15,9 +12,9 @@ public class ProductBuilder {
                 .price(product.getPrice())
                 .stock(product.getStock())
                 .category(product.getCategory())
-                .shoppingCartProductList(ShoppingCartProductBuilder.toShoppingCartProductDTOList(product.getShoppingCartProductList()))
-                .orderProductList(OrderProductBuilder.toOrderProductDTOList(product.getOrderProductList()))
-                .reviewList(ReviewBuilder.toReviewDTOList(product.getReviewList()))
+                .shoppingCartProductDTOList(ShoppingCartProductBuilder.toShoppingCartProductDTOList(product.getShoppingCartProductList()))
+                .orderProductDTOList(OrderProductBuilder.toOrderProductDTOList(product.getOrderProductList()))
+                .reviewDTOList(ReviewBuilder.toReviewDTOList(product.getReviewList()))
                 .build();
     }
     public static Product toEntity(ProductDTO productDTO) {

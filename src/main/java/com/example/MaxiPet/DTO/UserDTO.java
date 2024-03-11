@@ -19,7 +19,7 @@ public class UserDTO {
     //@Pattern(regexp = "")
     private String phone;
     private String password;
-    private List<ShoppingCartProductDTO> shoppingCartProductList;
-    private List<OrderDTO> orderList;
-    private List<ReviewDTO> reviewList;
+    private List<ShoppingCartProductDTO> shoppingCartProductDTOList;
+    private List<OrderDTO> orderDTOList;
+    private List<ReviewDTO> reviewDTOList;
 }

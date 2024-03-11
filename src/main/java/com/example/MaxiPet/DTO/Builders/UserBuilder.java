@@ -1,7 +1,6 @@
 package com.example.MaxiPet.DTO.Builders;
 
 import com.example.MaxiPet.DTO.UserDTO;
-import com.example.MaxiPet.Entity.ShoppingCartProduct;
 import com.example.MaxiPet.Entity.User;
 
 public class UserBuilder {
@@ -15,9 +14,9 @@ public class UserBuilder {
                 .email(user.getEmail())
                 .phone(user.getPhone())
                 .password(user.getPassword())
-                .shoppingCartProductList(ShoppingCartProductBuilder.toShoppingCartProductDTOList(user.getShoppingCartProductList()))
-                .orderList(OrderBuilder.toOrderDTOList(user.getOrderList()))
-                .reviewList(ReviewBuilder.toReviewDTOList(user.getReviewList()))
+                .shoppingCartProductDTOList(ShoppingCartProductBuilder.toShoppingCartProductDTOList(user.getShoppingCartProductList()))
+                .orderDTOList(OrderBuilder.toOrderDTOList(user.getOrderList()))
+                .reviewDTOList(ReviewBuilder.toReviewDTOList(user.getReviewList()))
                 .build();
     }
 
