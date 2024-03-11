@@ -26,6 +26,9 @@ public class UserBuilder {
                 .role(userDTO.getRole())
                 .email(userDTO.getEmail())
                 .name(userDTO.getName())
+                .firstName(userDTO.getFirstName())
+                .password(userDTO.getPassword())
+                .phone(userDTO.getPhone())
                 .build();
     }
 }
